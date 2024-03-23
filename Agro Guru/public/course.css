@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.logo img {
+    height: 10vh;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    gap: 100px;
+    height: 10vh;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-content {
+    gap: 40px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-content a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #0C5423;
+    opacity: 50%;
+    font-family: 'Poppins', sans-serif;
+    transition: .3s;
+}
+
+.nav-content a:hover {
+    opacity: 100%;
+}
+.btn {
+    padding: 5px 30px;
+    border-radius: 10px;
+    border: 2px solid #00B259;
+    background-color: #00B259;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: white;
+    color: #00B259;
+    border: 2px solid #00B259;
+}
+.content1{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    background: #D8F3D4;
+}
+.center{
+    font-weight: 400;
+    color:#0C5423;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content1 h2{
+    text-align: center;
+    font-weight:400;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.content1 p{
+    justify-content: center;
+    text-align: center;
+}
+.content1 form {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+    max-width: 600px; 
+    margin: 0 auto; 
+    font-family: 'Poppins', sans-serif;
+}
+
+.course-form input[type="text"] {
+    flex: 1; 
+    padding: 5px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 400px;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid #00b25942;
+}
+
+input[type="submit"] {
+    margin-left: 10px; 
+    padding: 5px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    background-color: #00B259;
+    border-radius: 10px;
+    border: 2px solid #00B259;
+    font-family: 'Poppins', sans-serif;
+}
+.boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+.box{
+    width: 300px;
+    height: 420px; 
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #00b2593d;
+    transition:0.4s;
+    padding: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.box:hover {
+    border: 2px solid #00B259;
+}
+.box img {
+    width: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.box h2 {
+    margin-top: 0px;
+    font-size: 18px;
+    font-weight:400;
+    color: #00B259;
+    height: 40px;
+}
+.box p {
+    font-size: 14px;
+    color: #555;
+    color:#0C5423;
+}
+.box a{
+    justify-content: right;
+    text-decoration:none;
+    font-size: 10px;
+    opacity: 50%;
+    font-family: 'Poppins', sans-serif;
+    transition: .3s;
+}
+.social {
+    display: flex;
+    background: #00B259;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    gap: 20px;
+}
+
+.social-img {
+    background-color: white;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.social-img img {
+    height: 40px;
+}
+
+footer {
+    margin: 0;
+    bottom: 0;
+}
+
+.foot-nav {
+    background: #00b259;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    gap: 50px;
+}
+
+.foot-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.copyright {
+    background: #0C5423;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    color: white;
+}

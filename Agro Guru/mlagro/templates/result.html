@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Prediction Result</title>
+</head>
+<body>
+    <h1>Crop Prediction Result</h1>
+    {% if prediction %}
+        <p>The predicted crop for your input is: <b>{{ prediction }}</b></p>
+    {% else %}
+        <p>An error occurred during prediction. Please try again later.</p>
+    {% endif %}
+</body>
+</html>

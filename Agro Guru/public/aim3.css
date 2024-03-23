@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.logo img {
+    height: 10vh;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    gap: 100px;
+    height: 10vh;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.nav-content {
+    gap: 40px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-content a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #0C5423;
+    opacity: 50%;
+    font-family: 'Poppins', sans-serif;
+    transition: .3s;
+}
+
+.nav-content a:hover {
+    opacity: 100%;
+}
+*{
+   margin:0;
+   padding:0; 
+}
+h1{
+    margin:0.3em;
+    font-size:3em;
+}
+h2{
+    margin-bottom: 0.5em;
+}
+.title{
+    text-align: center;
+}
+.title h1{
+    font-weight: 400;
+    color:#0C5423
+}
+.timeline{
+    margin:5em auto;
+    max-width: 34.15em;
+}
+.chechpoint{
+    max-width: 34em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: relative;
+}
+.checkpoint div{
+    border:2px solid #0C5423;
+    border-radius: 1em;
+    padding:1.5em;
+}
+.checkpoint p{
+    line-height: 27px;
+}
+.checkpoint:nth-child(odd){
+    border-left:3px solid #0C5423;
+    padding-left: 3em;
+    transform: translateX(17em);
+}
+.checkpoint:nth-child(even){
+    border-right:3px solid #0C5423;
+    padding-right: 3em;
+    transform: translateX(-17em);
+}
+.checkpoint:nth-child(odd)::before,
+.checkpoint:nth-child(even)::before{
+    content:'';
+    background:#0C5423;
+    width: 3em;
+    height: 3px;
+    position: absolute;
+    top:50%;
+    transform: translateX(-50%);
+}
+.checkpoint:nth-child(odd)::before{
+    left:0;
+}
+.checkpoint:nth-child(even)::before{
+    right:0;
+}
+.checkpoint:nth-child(odd) div::before,
+.checkpoint:nth-child(even) div::before{
+    content:'';
+    background: #0C5423;
+    box-shadow: 0 0 0.5em #0d71fc;
+    width: 0.8em;
+    height:0.8em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+.checkpoint:nth-child(odd) div::before{
+    left:-0.5em;
+}
+.checkpoint:nth-child(even) div::before{
+    right:-0.5em;
+}
+@media screen and(max-width:1150px){
+    .timeline{
+        width:80vw;
+    }
+    .timeline .checkpoint{
+        width:100%;
+        transform:none;
+        padding-left: 0;
+        padding-right: 0;
+        border:none;
+    }
+    .timeline .checkpoint::before{
+        width:3px;
+        height:4em;
+        top: -2em;
+        left:50%;
+        transform:translateX(-50%);
+    }
+    .timeline .checkpoint div::before{
+        top:-0.5em;
+        left: 50%;
+        transform:translateX(-50%);
+    }
+}
+.social {
+    display: flex;
+    background: #00B259;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    gap: 20px;
+}
+
+.social-img {
+    background-color: white;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.social-img img {
+    height: 40px;
+}
+
+footer {
+    margin: 0;
+    bottom: 0;
+}
+
+.foot-nav {
+    background: #00b259;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    gap: 50px;
+}
+
+.foot-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.copyright {
+    background: #0C5423;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    color: white;
+}

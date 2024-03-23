@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contactus.css" class="stylesheet">
+    <script src="https://kit.fontawesome.com/9edc6ddaaf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="img/AgroGuru 2.png" alt="">
+        </div>
+        <div class="nav-content">
+            <a href="index.html">Home</a>
+            <a href="course.html">Courses</a>
+            <a href="e-commerce.html">E-commerce</a>
+            <a href="scheme.html">Schemes</a>
+            <a href="aboutus.html">About us</a>
+            <a href="contactus" style="opacity: 100%;">Contact Us</a>
+        </div>
+    </nav>
+    <div class="container-contact">
+        <h1>Connect with Us</h1>
+        <div class="contact-box">
+            <div class="contact-left">
+                <h3>Sent your request</h3>
+                <form method="post" action="/contactus" >
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Name</label>
+                            <input type="text" placeholder="Enter your Name" name="name" id="name">
+                        </div>
+                        <div class="input-group">
+                            <label>Phone</label>
+                            <input type="text" placeholder="Enter your Number" name="phone" id="phone">
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>E-mail</label>
+                            <input type="text" placeholder="Enter your mail" name="email" id="email">
+                        </div>
+                        <div class="input-group">
+                            <label>Subject</label>
+                            <input type="text" placeholder="Product Demo" name="subject" id="subject">
+                        </div>
+                    </div>
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Your Message" name="message" id="message"></textarea>
+                    <label id="submission-response" style="color: green;">submitted successfully</label>
+                    <button type="submit" class="contact-btn">SEND</button>
+                </form>
+            </div>
+            <div class="contact-right">
+                <h3>Reach Us</h3>
+                <table>
+                    <tr>
+                        <td>Email:</td>
+                        <td>contactus@Endeavourai.com</td>
+                    </tr>
+                    <tr>
+                        <td>Phone:</td>
+                        <td>0413-2642000</td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td>No.212,Ground floor,Some road,Some Street,Madagadipet<br>
+                            Puducherry-605107</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="social">
+            <div class="social-img">
+                <img src="img/icons8-facebook-480.png" alt="">
+            </div>
+            <div class="social-img">
+                <img src="img/icons8-instagram-480.png" alt="">
+            </div>
+            <div class="social-img">
+                <img src="img/icons8-twitter-480.png" alt="">
+            </div>
+            <div class="social-img">
+                <img src="img/icons8-google-plus-480.png" alt="">
+            </div>
+            <div class="social-img">
+                <img src="img/icons8-youtube-480.png" alt="">
+            </div>
+        </div>
+        <div class="foot-nav">
+            <a href="">Home</a>
+            <a href="">Courses</a>
+            <a href="">E-Commerce</a>
+            <a href="">Schemes</a>
+            <a href="">About Us</a>
+            <a href="">Contact Us</a>
+        </div>
+        <div class="copyright">
+            Copyright ©2023. Designed by Endeavour AI
+        </div>
+    </footer>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', async function (event) {
+            event.preventDefault();
+            const responseDiv = document.getElementById('submission-response');
+
+            try {
+                const formData = new FormData(event.target);
+                const response = await fetch('/contactus', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (response.ok) {
+                    const text = await response.text();
+                    responseDiv.textContent = text;
+                } else {
+                    responseDiv.textContent = 'Submission failed.';
+                }
+            } catch (error) {
+                responseDiv.textContent = 'Submission failed. Please try again later.';
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.logo img {
+    height: 10vh;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    gap: 100px;
+    height: 10vh;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.nav-content {
+    gap: 40px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-content a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #0C5423;
+    opacity: 50%;
+    font-family: 'Poppins', sans-serif;
+    transition: .3s;
+}
+
+.nav-content a:hover {
+    opacity: 100%;
+}
+
+.content {
+    display: flex;
+    height: 85vh;
+    margin: 0;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-left: 50px;
+    flex-basis: 50%;
+}
+
+.left h2 {
+    margin-bottom: 1px;
+    font-size: 30px;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.left h1 {
+    color: #0C5423;
+    font-weight: 400;
+    font-size: 70px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.left p {
+    color: black;
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.left p span {
+    color: #00B259;
+}
+
+.btn {
+    padding: 5px 30px;
+    border-radius: 10px;
+    border: 2px solid #00B259;
+    background-color: #00B259;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: white;
+    color: #00B259;
+    border: 2px solid #00B259;
+}
+
+.right {
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.right img {
+    height: 70vh;
+}
+
+.aim {
+    padding: 0px 50px;
+    padding-top: 0;
+    height: 60vh;
+    margin-top: 0;
+}
+
+.aim h1 {
+    font-size: 36px;
+    font-weight: 400;
+    color: #0C5423;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    gap: 120px;
+    padding-top: 10px;
+}
+
+.card {
+    background: #D8F3D4;
+    border-radius: 60px 60px 10px 10px;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px #00000010;
+    border: 1px solid transparent;
+    transition: .5s;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 30px #00000010;
+    border: 1px solid #00b25940;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.card img {
+    height: 90px;
+    transition: .3s;
+}
+
+.image {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    margin-top: 50px;
+    overflow: hidden;
+    height: 150px;
+    width: 150px;
+}
+
+.content {
+    color: #0C5423;
+    padding-top: 30px;
+    font-size: 20px;
+    margin: 0px 10px;
+    font-weight: 400;
+}
+
+.content-card {
+    color: #0C5423;
+    font-size: 20px;
+    margin: 0px 10px;
+}
+.card-link{
+    text-decoration: none;
+    color:inherit;
+}
+.social {
+    display: flex;
+    background: #00B259;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    gap: 20px;
+}
+
+.social-img {
+    background-color: white;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.social-img img {
+    height: 40px;
+}
+
+footer {
+    margin: 0;
+    bottom: 0;
+}
+
+.foot-nav {
+    background: #00b259;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    gap: 50px;
+}
+
+.foot-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.copyright {
+    background: #0C5423;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    color: white;
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Soil Health Prediction Result</title>
+</head>
+<body>
+    <h1>Soil Health Prediction Result</h1>
+    {% if predict == 1  %}
+        <p>Your soil health is good </p>
+    {% elif predict == 0 %}
+        <p>Your soil is not healthy to work</p>
+    {% else %}
+        <p>An error occurred. Please try again.{{predict}}</p>
+    {% endif %}
+</body>
+</html>

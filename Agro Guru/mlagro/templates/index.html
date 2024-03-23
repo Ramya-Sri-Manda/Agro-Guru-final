@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Prediction</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0C5423;
+    font-weight: 400;
+    font-size: 50px;
+    background-color: #D8F3D4; /* Light green background for the title */
+    border-radius: 10px; /* Rounded corners for the title */
+  }
+  
+  /* Form Styles */
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    display: block;
+    color: #0C5423;
+    font-weight: 400;
+    font-size: 20px;
+  } 
+  
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  button[type="submit"] {
+
+        width: 150px;
+        background-color: #00B259;
+        outline: none;
+        height: 49px;
+        border-radius: 10px;
+        color: #00B259;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin: 10px 0;
+        cursor: pointer;
+        transition: 0.5s;
+        font-size: 17px;
+        font-family: 'Poppins', sans-serif;
+        border: 2px solid #00B259;
+        color: white;
+        justify-content: center;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #009642;
+  }
+    </style>
+</head>
+<body>
+    <h1>Crop Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="nitrogen">Nitrogen:</label>
+        <input type="number" name="nitrogen" id="nitrogen" required>
+        <br>
+        <label for="phosphorus">Phosphorus:</label>
+        <input type="number" name="phosphorus" id="phosphorus" required>
+        <br>
+        <label for="potassium">Potassium:</label>
+        <input type="number" name="potassium" id="potassium" required>
+        <br>
+        <label for="temperature">Temperature (°C):</label>
+        <input type="number" name="temperature" id="temperature" required>
+        <br>
+        <label for="humidity">Humidity (%):</label>
+        <input type="number" name="humidity" id="humidity" required>
+        <br>
+        <label for="ph">pH:</label>
+        <input type="number"  name="ph" id="ph" required>
+        <br>
+        <label for="rainfall">Rainfall (mm):</label>
+        <input type="number" name="rainfall" id="rainfall" required>
+        <br>
+        <button type="submit">Predict Crop</button>
+    </form>
+</body>
+</html>
