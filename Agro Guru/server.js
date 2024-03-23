@@ -113,8 +113,9 @@ app.post("/login", async (req, res) => {
             return res.send('Password does not match');
         }
     } catch (error) {
+        console.error("error found");
         console.error(error);
-        res.status(500).send('Internal Server Error');
+        res.status(500).send('Internal Server Error');   
     }
 });
 
